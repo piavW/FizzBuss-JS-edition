@@ -30,4 +30,9 @@ global.expect = chai.expect;
 4. To the best of your knowledge please explain why we are moving (number % 5 === 0) to the top?
     Because if we don't the code will start to check if it's divisible by 3 and if it is it'll be satisfied and not check if it's divisible by 5. Since the code reads from top to bottom we need to have the bigger numbers or unlikely if-statements at the top. 
 
-5. 
+5. To the best of your knowledge please explain the difference between feature and unit test?
+    Unit testing is when we test a specific piece of code or a smaller part of an application. We test that the code functions the way we programed it to. 
+    
+    Feature testing is when we test how an entire application works when it's used by a user, we test if the application does what we want it to do from a user's point of view. We question whether the functionality of the application makes sense to a user, administrator, or other roles.
+
+6. 
