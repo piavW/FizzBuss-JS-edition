@@ -7,17 +7,19 @@ before(async () => {
 });
   beforeEach(async () => {
     await browser.page.reload();
-  })
+  });
 
   after(async () => {
     await browser.close();
-  })
+  });
+  it ('renders the correct page title', async () => {
+    expect(await browser.page.title()).to.eql('FizzBuzz game - JavaScript edition')
+  });
 
   it ('clicking on the "check" button', async () => {
-    await browser.fillIn("input[id='value']", {
-      with: '3'})
-      await browser.clickOnButton("input[value='check']")
-      let content = await browser.getContent("div[id='display_answer']")
-      expect(content) == ('Fizz');
+    await browser.fillIn("input[id='value']", { with: '3'})
+    await browser.clickOnButton("input[value='check']")
+    let content = await browser.getContent("[id='display_answer']")
+    expect(content) == ('Fizz');
     })
-})
+});
