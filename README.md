@@ -35,4 +35,9 @@ global.expect = chai.expect;
     
     Feature testing is when we test how an entire application works when it's used by a user, we test if the application does what we want it to do from a user's point of view. We question whether the functionality of the application makes sense to a user, administrator, or other roles.
 
-6. 
+6. To the best of your knowledge please explain what this following code does (references the describe-block with before, beforeEach and after in application.feature.js)?
+    The code first adds a context through the describe, within that context it specifies that before any async function is used the code will wait until the browser visits the page. 
+    The code also specifies that after the page has been visited, each beforeEach async function with the await-keyword shall do a reload of page before the code after the await-keyword is run. 
+    The code also specifies that after the page has been visited, and after all async-function with an await-keyword has been run the browser shall close. 
+
+7. 

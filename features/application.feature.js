@@ -1,5 +1,19 @@
 require('../spec.helper');
 
+describe('User can input a value and get FizzBuzz results', () => {
+before(async () => {
+  await browser.init()
+  await browser.visitPage('http://localhost:8080/')
+});
+  beforeEach(async () => {
+    await browser.page.reload();
+  })
+
+  after(async () => {
+    await browser.close();
+  })
+})
+
 context('Your Description of the test scenario', () => {
   // Initialize a browser and visit the server's root path
   before(async () => {
