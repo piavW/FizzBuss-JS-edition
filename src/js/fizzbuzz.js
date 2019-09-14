@@ -1,15 +1,15 @@
 
-function fizzBuzz() {
+function FizzBuzz() {
     this.check = (number) => {
         return number
     }
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = fizzBuzz;
+    module.exports = FizzBuzz;
 }
 
-function fizzBuzz() {
+function FizzBuzz() {
     this.check = (number) => {
         if (number % 15 === 0) {
             return 'FizzBuzz!';

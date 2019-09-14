@@ -16,10 +16,10 @@ before(async () => {
     expect(await browser.page.title()).to.eql('FizzBuzz game - JavaScript edition')
   });
 
-  it ('clicking on the "check" button', async () => {
-    await browser.fillIn("input[id='value']", { with: '3'})
-    await browser.clickOnButton("input[value='check']")
+  it ('clicking on the "Check" button', async () => {
+    await browser.fillIn("input[id='value']", { with: '3' })
+    await browser.clickOnButton("input[value='Check']")
     let content = await browser.getContent("[id='display_answer']")
-    expect(content) == ('Fizz');
+    expect(content).to.eql('Fizz');
     })
 });
