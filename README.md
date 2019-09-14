@@ -27,4 +27,7 @@ global.expect = chai.expect;
 3. To the best of your knowledge please explain the difference between using === and == in JS?
     === is also called the identity operator, it  compares if the operators are equal and whether of the same type. The equality operator == compares operators equality and does a typeconversion if neccessary before it checks for equality. Because of this the identity operator is stricter than the equality operator. 
 
-4. 
+4. To the best of your knowledge please explain why we are moving (number % 5 === 0) to the top?
+    Because if we don't the code will start to check if it's divisible by 3 and if it is it'll be satisfied and not check if it's divisible by 5. Since the code reads from top to bottom we need to have the bigger numbers or unlikely if-statements at the top. 
+
+5. 
