@@ -40,4 +40,6 @@ global.expect = chai.expect;
     The code also specifies that after the page has been visited, each beforeEach async function with the await-keyword shall do a reload of page before the code after the await-keyword is run. 
     The code also specifies that after the page has been visited, and after all async-function with an await-keyword has been run the browser shall close. 
 
-7. 
+7. To the best of your knowledge please explain what expectations in the context of testing are?
+    Expectations - when testing - are assertions that tell the test what outcome to expect regarding the value/object/argument it is given within the parenthesis. The expect checks if the argument given within it's parentesis are whatever scenario you tell it to be after the parenthesis through chainable getters (.to.eql or .to be...). 
+
