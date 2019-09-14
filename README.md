@@ -24,5 +24,7 @@ global.expect = chai.expect;
     We're placing it there so that the coded context is true for all the following it-blocks within that descriptions context.
     If we placed it in an it-block it would only happen/give that context to that specific it-block.
 
-3. 
+3. To the best of your knowledge please explain the difference between using === and == in JS?
+    === is also called the identity operator, it  compares if the operators are equal and whether of the same type. The equality operator == compares operators equality and does a typeconversion if neccessary before it checks for equality. Because of this the identity operator is stricter than the equality operator. 
 
+4. 
