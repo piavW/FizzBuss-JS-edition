@@ -13,11 +13,11 @@ before(async () => {
     await browser.close();
   })
 
-  it ('clicking on the "Check" button', async () => {
+  it ('clicking on the "check" button', async () => {
     await browser.fillIn("input[id='value']", {
-      with: "3"})
-      await browser.clickOnButton("input[value='Check']")
-      let content = await browser.getContect("[id='display_answer']")
-      expect(content).to.eql('Fizz');
+      with: '3'})
+      await browser.clickOnButton("input[value='check']")
+      let content = await browser.getContent("div[id='display_answer']")
+      expect(content) == ('Fizz');
     })
 })

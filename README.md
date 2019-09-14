@@ -43,3 +43,19 @@ global.expect = chai.expect;
 7. To the best of your knowledge please explain what expectations in the context of testing are?
     Expectations - when testing - are assertions that tell the test what outcome to expect regarding the value/object/argument it is given within the parenthesis. The expect checks if the argument given within it's parentesis are whatever scenario you tell it to be after the parenthesis through chainable getters (.to.eql or .to be...). 
 
+8. To the best of your knowledge please write a line to line explanation of what is happening in this code:
+```js
+<script src="js/fizzbuzz.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let button = document.getElementById('button')
+            let displayDiv = document.getElementById('display_answer')
+            button.addEventListener('click', () =>{
+                let value = document.getElementById('value').value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                displayDiv.innerHTML = result;
+            })
+        })
+    </script>
+```
