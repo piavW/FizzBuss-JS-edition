@@ -4,13 +4,11 @@ Built by: [Pia von Wachenfelt](https://github.com/piavW)
 This was built over a weekend-challenge in september 2019, the answer to the questions in the course-material is at the bottom of this README. 
 
 ## What the code does
-This code allows your to play the FizzBuzz-game.
+This code allows your to play the FizzBuzz-game. 
+If a number if divisible by 3 it replies Fizz, if it's divisible by 5 it replies Buzz, if it's divisible by 15 it replies FizzBuzz!
 
 ## Dependencies & code
 NPM, e2e-training-wheels: (chai, superstatic).
-## Setup
-
-## Acknowledgements
 
 ## License
 MIT-license
