@@ -45,17 +45,17 @@ global.expect = chai.expect;
 
 8. To the best of your knowledge please write a line to line explanation of what is happening in this code:
 ```js
-<script src="js/fizzbuzz.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let button = document.getElementById('button')
-            let displayDiv = document.getElementById('display_answer')
-            button.addEventListener('click', () =>{
-                let value = document.getElementById('value').value
-                let fizzBuzz = new FizzBuzz
-                let result = fizzBuzz.check(value)
-                displayDiv.innerHTML = result;
-            })
-        })
-    </script>
+<script src="js/fizzbuzz.js"></script> //tells us where the script can find the document we're refering to below.
+    <script> //opens script
+        document.addEventListener('DOMContentLoaded', () => { //tells the document to run the code-block after the DOMContent is fully loaded
+            let button = document.getElementById('button') // creates the HTMLelement button and links it with the html-button-element written in the html
+            let displayDiv = document.getElementById('display_answer')//creates the HTMLelement displayDiv and links it with the display_answer-element in the html
+            button.addEventListener('click', () =>{ //tells the document to run the following code-block after the event click has occured
+                let value = document.getElementById('value').value //creates the value and sets it to be the value of the element with the id value
+                let fizzBuzz = new FizzBuzz //creates a new instance of the FizzBuzz function, the new instance is named fizzBuzz
+                let result = fizzBuzz.check(value) //creates result object which is set as the value given when the fizzBuzz instance uses the method check with the inputted value
+                displayDiv.innerHTML = result; //makes the object result show in the displayDiv-element
+            }) //closes the button.addEventListener
+        }) 
+    </script> //closes the document.addEventlistener and closes the script-tag.
 ```
