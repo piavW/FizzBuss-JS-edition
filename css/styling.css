@@ -1,0 +1,26 @@
+/* General Styling of the page body, div and footer.  */
+body {
+    background-image: url("../img/stones.jpeg");
+    background-size: cover;
+}
+#divi{
+    background-color: rgba(252, 248, 248, 0.132);
+    text-shadow:
+		-1px -1px 0 #999,
+		1px -1px 0 #999,
+		-1px 1px 0 #999,
+		1px 1px 0 #999;
+}
+#footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    text-shadow:
+    -1px -1px 0 #999,
+    1px -1px 0 #999,
+    -1px 1px 0 #999,
+    1px 1px 0 #999;
+}
