@@ -1,5 +1,6 @@
 # FizzBuzz - JavaScript edition
 Built by: [Pia von Wachenfelt](https://github.com/piavW)
+Deployed with GitHub Pages. 
 
 This was built over a weekend-challenge in september 2019, the answer to the questions in the course-material is at the bottom of this README. 
 

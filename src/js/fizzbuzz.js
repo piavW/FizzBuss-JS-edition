@@ -4,7 +4,9 @@ if (typeof module !== 'undefined' && module.exports) {
 
 function FizzBuzz() {
     this.check = (number) => {
-        if (divisible(number, 15)) {
+        if ((number == '') || (number == 0 ) || (isNaN(number)) || (number % 1 !== 0)) {
+            return 'Please input a number'
+        } else if (divisible(number, 15)) {
             return 'FizzBuzz!';
         } else if (divisible(number, 5)) {
             return 'Buzz';
