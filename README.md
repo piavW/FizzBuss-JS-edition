@@ -61,4 +61,3 @@ global.expect = chai.expect;
 
 9. To the best of your knowledge please explain what a CDN (Content Delivery Network) is?
     A CDN is a global network of servers and datacenters in multiple locations which delivers specific web-based content. We use it to access already done styling to our webpage. 
-
